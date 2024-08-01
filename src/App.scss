@@ -1,0 +1,91 @@
+.App {
+    text-align: left;
+  
+    &-header {
+      background-color: #282c34;
+      min-height: 10vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(10px + 2vmin);
+      color: white;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items:first baseline;
+        padding: 10px;
+      
+        // Styles for select elements
+        select {
+          width: 200px;
+          padding: 10px;
+          margin: 10px;
+          border: 1px solid #282c34;
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          font-size: 16px;
+          color: #333;
+      
+          option {
+            padding: 10px;
+            font-size: 16px;
+          }
+      
+          &:focus {
+            outline: none;
+            border-color: darken(#282c34, 10%);
+          }
+        }
+        form {
+            display: flex;
+            width: 250px;
+            position: relative;
+            margin-top: 10px;
+        
+            input {
+              width: 100%;
+              border-radius:  5px;
+              padding: 10px ;
+              font-size: 16px;
+              border: 1px solid #282c34;
+              transition: 0.2s;
+              box-shadow: inset 0 0 5px black;
+        
+              &:focus {
+                border-color: #4f6183;
+                box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+              }
+        
+              &::placeholder {
+                color: #aaa;
+              }
+            }
+            button {
+              position: absolute;
+              width: 60px;
+              height: 30px;
+              margin: 4px;
+              border-radius:  5px;
+              right: 0px;
+              border: none;
+              font-size: 15px;
+              background-color: #4f6183;
+              color: white;
+              transition: 0.2s all;
+              box-shadow: 0 0 10px black;
+              &:hover {
+                cursor: pointer;
+                background-color: #282c34;
+              }
+            }
+          }
+      
+       
+      }
+      
+    
+  }
+  
